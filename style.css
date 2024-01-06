@@ -34,22 +34,7 @@ body {
   /* overflow-x: hidden; */
 }
 
-#cart-amount {
-  background-color: white;
-  /* color: var(--blue); */
-  color: var(--pink);
-  font-weight: bold;
-  width: 20px;
-  /* height: 25px; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  position: fixed;
-  z-index: 20000;
-  top: 26px;
-  right: 65px;
-}
+
 
 .navbar {
   position: fixed;
@@ -59,7 +44,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, var(--pink) 30vw, var(--blue) 70vw);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar.sticky {
@@ -84,7 +69,7 @@ body {
   top: -13px;
 }
 
-.navbar #brand-name {
+.navbar #conference-name {
   color: var(--blue);
   font-size: 25px;
   z-index: 400;
@@ -93,15 +78,19 @@ body {
 #bars {
   margin-right: -25px;
   font-size: 25px;
-  color: black;
-  z-index: 900;
+  /* color: black; */
   display: none;
+  padding: 25px ;
+  color: var(--blue);
+  cursor: pointer;
 }
+
 
 li {
   list-style: none;
   display: inline-block;
   padding: 0 7px;
+  cursor: pointer;
 }
 
 li a {
@@ -109,6 +98,7 @@ li a {
   text-transform: uppercase;
   color: var(--pink);
   font-weight: bold;
+
 }
 
 #navbar {
@@ -126,7 +116,7 @@ li a {
   font-weight: bolder;
 }
 
-.brand-info {
+.conference-info {
 
   position: absolute;
   padding: 0 40px;
@@ -137,27 +127,23 @@ li a {
   align-items: center;
 }
 
-.brand-info #guitar {
+.conference-info #guitar {
   display: none;
 }
 
-.regAndContact{
- 
-  color: var(--pink);
-}
 
-.brand-info-text {
+.conference-info-text {
   max-width: 40vw;
   position: relative;
   right: 0px;
   text-align: right;
 }
 
-.brand-info-text p {
+.conference-info-text p {
   color: var(--pink);
 }
 
-.brand-info-text h1 {
+.conference-info-text h1 {
   font-size: 60px;
   color: var(--pink);
 
@@ -181,11 +167,7 @@ li a {
 }
 
 
-#cart,
-#bars {
-  color: var(--blue);
-  padding: 25px;
-}
+
 
 #navigation #guitar {
   padding: 15px;
@@ -193,7 +175,7 @@ li a {
   color: var(--pink);
 }
 
-#letterB {
+#firstLetter {
   position: relative;
 }
 
@@ -203,45 +185,7 @@ li a {
   font-size: 25px;
 }
 
-#cart-added {
-  position: fixed;
-  top: 150px;
-  right: -30vw;
-  background-color: white;
-  width: 300px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 1s ease-in;
-}
 
-#cart-added.active {
-  right: 10px;
-  transition: 0.2s;
-}
-
-#cart-added.active.remove {
-  right: -30vw;
-}
-#cart-added #item-added {
-  display: flex;
-  padding: 25px 60px;
-}
-
-#check-icon {
-  color: green;
-  margin-right: 15px;
-}
-
-#cart-added #hr {
-  width: 0;
-  height: 5px;
-  background-color: green;
-  padding: 0;
-  transition: 0.3s ease;
-}
-
-#cart-added #hr.active {
-  width: 300px;
-}
 
 .mobileNavbar {
   /* position: absolute;
@@ -249,9 +193,9 @@ li a {
   display: none;
 }
 
-.hi {
+/* .hi {
   margin-top: 100px;
-}
+} */
 
 #linkTag{
   text-decoration: none;
@@ -260,7 +204,7 @@ li a {
 /* HOME PAGE */
 @media (max-width: 1025px) {
 
-.brand-info-text h1 {
+.conference-info-text h1 {
   font-size: 50px;
   color: var(--pink);
 
@@ -278,7 +222,7 @@ li a {
   #navbar {
     display: none;
   }
-  .brand-info {
+  .conference-info {
 
     position: absolute;
     /* padding: 0 40px; */
@@ -293,9 +237,10 @@ li a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
   }
 
-  .brand-info-Tab{
+  .conference-info-Tab{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -309,7 +254,7 @@ li a {
   /* background: none; */
   }
 
-  .brand-info {
+  .conference-info {
     z-index: 900;
     text-align: center;
   padding: 0 ;
@@ -323,10 +268,8 @@ li a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .brand-info-text{
+  .conference-info-text{
     text-align: center;
-   
-    
   }
 
   .fadeOver{
@@ -335,25 +278,25 @@ li a {
   }
 
 
-  .brand-info #guitar {
+  .conference-info #guitar {
     display: block;
     font-size: 30px;
     margin-bottom: 10px;
     color: black;
   }
 
-  .brand-info-text {
+  .conference-info-text {
     max-width: 100%;
   }
 
-  .brand-info-text p {
+  .conference-info-text p {
     /* color: var(--blue); */
     color: black;
     width: 100%;
     font-size: 13px;
   }
 
-  .brand-info-text h1 {
+  .conference-info-text h1 {
     font-size: 35px;
     /* color: var(--blue); */
     color: black;
@@ -363,8 +306,11 @@ li a {
   /*  */
 
   .mobileNavbar {
+    /* z-index: 900; */
     display: block;
-    background-color: rgb(3, 13, 39);
+  background: linear-gradient(to top, var(--pink) 20vw, var(--blue) 80vw);
+
+    /* background-color: rgb(3, 13, 39); */
     position: fixed;
     z-index: 1000;
     height: 100vh;
@@ -377,7 +323,7 @@ li a {
 
   #bars {
     display: block;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   #navigation #guitar {
@@ -397,7 +343,7 @@ li a {
 
   .mobileNavbar .xMark {
     font-size: 30px;
-    color: white;
+    color: var(--pink);
     transform: translateY(24px);
     margin-right: 15px;
     cursor: pointer;
@@ -411,20 +357,20 @@ li a {
   .mobileNavbar #crown {
     position: absolute;
     /* transform: translateY(-58px); */
-    color: white;
+    color: var(--pink);
     z-index: 800;
     top: -15px;
   }
 
-  .mobileNavbar #brand-name {
-    color: white;
+  .mobileNavbar #conference-name {
+    color: var(--pink);
     font-size: 25px;
     z-index: 400;
   }
 
   .mobileNavbar li {
     font-weight: bold;
-    color: white;
+    color: var(--pink);
     margin-top: 50px;
     letter-spacing: 0.5px;
     width: 230px;
@@ -459,11 +405,11 @@ li a {
 
   .mobileNavbar .callNow .number {
     margin: 0 10px;
-    color: white;
+    color: var(--pink);
   }
 
   .mobileNavbar .number p:last-of-type {
-    color: white;
+    color: var(--pink);
     transition: ease-in-out 0.5s;
   }
 }
