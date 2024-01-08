@@ -14,7 +14,7 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--blue);
 }
 
 :root {
@@ -61,7 +61,7 @@ body {
   position: relative;
 }
 
-.navbar #crown {
+.navbar #tool {
   position: absolute;
   /* transform: translateY(-58px); */
   color: var(--blue);
@@ -354,7 +354,7 @@ li a {
     margin-top: 50px;
   }
 
-  .mobileNavbar #crown {
+  .mobileNavbar #tool {
     position: absolute;
     /* transform: translateY(-58px); */
     color: var(--pink);
@@ -379,9 +379,7 @@ li a {
     transition: ease-in 0.5s;
   }
 
-  .mobileNavbar li:hover {
-    color: rgb(177, 142, 67);
-  }
+
 
   /* .mobileNavbar li:hover {
     color: var(--creamish);

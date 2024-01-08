@@ -1,0 +1,180 @@
+/* Third Page */
+
+
+  :root {
+    --brown: rgb(165, 91, 42);
+    --blue: rgb(3, 13, 39);
+  --pink: rgb(192, 30, 130);
+
+  }
+  
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  
+  .firstImage {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
+  
+  table {
+    /* margin-top: 20px; */
+    width: 90vw;
+    height: 500px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  table,
+  .th,
+  .td {
+    border: 1px solid var(--pink);
+    border-collapse: collapse;
+  }
+
+  thead th{
+    background-color: var(--pink);
+    color: white;
+    padding: 7px 0;
+  }
+  
+
+  .sessionColumn{
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid var(--pink);
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sessionColumn.bottomSessionColumn{
+    border-bottom: none;
+  }
+
+  .presenterColumn{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  .presenterColumn div:first-of-type{
+    margin-bottom: 80px;
+  }
+
+  .costColumn{
+    width: 100%;
+    padding: 50px 0;
+    border-bottom: 1px solid var(--pink);
+    display: flex;
+    justify-content: center;
+  }
+
+  .costColumn.bottomCostColumn{
+    border-bottom: none;
+  }
+
+  .costColumn div{
+    width: 80px;
+    height: 30px;
+    background-color: var(--pink);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  .dateFromColumn, .dateToColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  /*  */
+
+ 
+  input[type ="checkbox"]{
+    margin-right: 7px;
+  }
+
+  .lastRow{
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+  }
+
+  .calculateBtn{
+    margin-top: 19px;
+    background-color: var(--pink);
+    color: white;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    /* third page */
+   
+    table {
+      width: 100vw;
+    }
+  
+    input[type="radio"] {
+      width: 8px;
+      margin-left: -5px;
+    }
+  
+  }
+  
+  @media (max-width: 500px) {
+    .sessionColumn{
+      font-size: 12px;
+    }
+
+    .presenterColumn div{
+      font-size: 12px;
+    }
+
+    input[type="checkbox"] {
+      width: 10px;
+    }
+
+    .dateFromColumn input,
+     .dateToColumn input{
+      width: 70px;
+    }
+
+    thead th{
+      font-size: 13px;
+    }
+
+    .lastRow{
+      text-align: center;
+      margin-right: 5px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .sessionColumn{
+      font-size: 10px;
+    }
+
+    .presenterColumn div{
+      font-size: 10px;
+    }
+
+    input[type="checkbox"] {
+      width: 10px;
+    }
+
+        
+  }
+

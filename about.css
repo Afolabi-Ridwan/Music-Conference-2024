@@ -1,40 +1,36 @@
 /* Third Page */
 
-* {
-  /* box-sizing: border-box; */
-}
 
 :root {
-  --brown: rgb(165, 91, 42);
+  --blue: rgb(3, 13, 39);
+  --pink: rgb(192, 30, 130);
+  /* --blue: rgb(26, 12, 56); */
 }
 
-/* .about  {
+.about  {
   overflow-x: hidden;
-} */
+  background: var(--blue);
+} 
 
 .firstSession .firstImage {
   width: 100%;
   height: 50vh;
   object-fit: cover;
-  /* margin-bottom: 300px; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .about .firstSession .infoNoteContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 300px;
 }
 
 .about .firstSession .infoNote {
   width: 60vw;
   text-align: center;
-  margin: 30px 0;
-  color: var(--textsColor);
+  margin: 80px 0;
+  color: var(--pink);
 }
 
 .about .firstSession .infoNote h3 {
@@ -57,17 +53,18 @@
 
 .about .authorsInfoSession .partOne {
   display: flex;
+  margin-top: 50px;
 }
 
 .about .authorsInfoSession .partOne .note {
   width: 50vw;
   height: 500px;
-  color: var(--textsColor);
+  color: var(--pink);
   background-color: var(--bgfaded);
 }
 
 .about .authorsInfoSession .partOne p {
-  width: 30vw;
+  width: 40vw;
   margin: 30px;
   font-weight: 500;
   line-height: 25px;
@@ -84,8 +81,8 @@
 
 .about .shortNote {
   display: flex;
-  margin: 50px;
-  color: var(--textsColor);
+  margin: 100px 50px;
+  color: var(--pink);
   justify-content: center;
 }
 
@@ -106,11 +103,20 @@
   padding: 10px 30px;
   background-color: var(--bg);
   border: none;
-  color: var(--textsColor);
+  color: var(--pink);
   font-size: 15px;
   border-radius: 5px;
   margin-left: 50px;
   margin-top: 30px;
+}
+
+#thankYou{
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  color: var(--pink);
+  background-color: var(--blue);
+  padding: 30px 0;
 }
 
 @media (max-width: 918px) {
@@ -122,6 +128,10 @@
 @media (max-width: 818px) {
   .about .firstSession .infoNote {
     width: 90vw;
+  }
+
+  .firstSession .firstImage {
+    height: 30vh;
   }
 
   .about .authorsInfoSession .partOne {
@@ -137,7 +147,7 @@
   .about .authorsInfoSession .partOne .note {
     width: 100%;
     height: auto;
-    color: var(--textsColor);
+    color: var(--pink);
     background-color: var(--bgfaded);
   }
 
@@ -178,6 +188,31 @@
 }
 
 @media (max-width: 500px) {
+
+  .about .firstSession .infoNote {
+    /* width: 60vw; */
+    /* text-align: center; */
+    margin-bottom: 20px ;
+    margin-top: 80px;
+    /* color: var(--pink); */
+  }
+  
+  .about .firstSession .infoNote h3 {
+    /* font-size: 3rem; */
+    margin-bottom: 0px;
+  }
+  
+  /* .about .firstSession .infoNote p {
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 500;
+  } */
+
+  .firstSession .firstImage {
+    height: 30vh;
+  }
+
   .about .firstSession .infoNote h3 {
     font-size: 25px;
   }
@@ -202,6 +237,10 @@
     font-size: 2rem;
     margin: 30px;
     text-align: center;
+  }
+
+  .secondImage{
+    margin: 25px 0;
   }
 }
 
