@@ -122,15 +122,22 @@
 
   @media (max-width: 600px) {
     /* third page */
-   
+    .firstImage {
+      width: 750px;
+    }
+
     section{
       overflow-x: scroll;
+      width: 750px;
+      margin-bottom: 0;
+      
       /* margin: auto 50px; */
     }
 
     table{
-      margin-left: 150px;
-      margin-right: 50px;
+      width: 700px;
+      /* margin-left: 150px;
+      margin-right: 50px; */
     }
     /* table {
       width: 100vw;
