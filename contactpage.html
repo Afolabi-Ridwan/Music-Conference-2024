@@ -44,23 +44,23 @@
         alt="rfa"
       />
     </div>
-    <header >
+    <div class="header" >
       <div>
         <h1>Contact Us</h1>
       </div>
-    </header>
+    </div>
 
     <main>
       <form id="myForm">
-        <div class="form-group">
+        <div class="form-input-tab">
           <label for="name">Name:</label>
           <input type="text" onchange="nameInputHandler(event)" id="name" name="name" required />
         </div>
-        <div class="form-group">
+        <div class="form-input-tab">
           <label for="email">Email:</label>
           <input type="email" id="email" onchange="emailInputHandler(event)"  name="email" required />
         </div>
-        <div class="form-group">
+        <div class="form-input-tab">
           <label for="message">Message:</label>
           <textarea id="message" name="message" onchange="messageInputHandler(event)" rows="5" required></textarea>
         </div>
@@ -90,7 +90,8 @@
 
       <a class="callNow" href="tel:+990-384-2290" id="linkTag">
         <div>
-          <i class="fa-solid fa-phone" style="color: white"></i>
+            <i class="fa-solid fa-phone" style="color: rgb(192, 30, 130)"></i>
+            
         </div>
         <div class="number">
           <p>Call Now</p>

@@ -13,13 +13,13 @@ body {
   color: var(--blue);
 }
 
-header {
+.header {
   text-align: center;
 }
 
 
 
-header h1 {
+.header h1 {
   color: #fff;
   font-size: 25px;
 }
@@ -44,7 +44,7 @@ form {
   margin-top: 10px;
 }
 
-.form-group {
+.form-input-tab {
   margin-bottom: 20px;
 }
 

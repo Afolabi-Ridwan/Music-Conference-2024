@@ -123,7 +123,16 @@
   @media (max-width: 600px) {
     /* third page */
    
-    table {
+    section{
+      overflow-x: scroll;
+      /* margin: auto 50px; */
+    }
+
+    table{
+      margin-left: 150px;
+      margin-right: 50px;
+    }
+    /* table {
       width: 100vw;
     }
   
@@ -159,11 +168,11 @@
     .lastRow{
       text-align: center;
       margin-right: 5px;
-    }
+    } */
   }
 
   @media (max-width: 500px) {
-    .sessionColumn{
+    /* .sessionColumn{
       font-size: 10px;
     }
 
@@ -173,7 +182,7 @@
 
     input[type="checkbox"] {
       width: 10px;
-    }
+    } */
 
         
   }
